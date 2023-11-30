@@ -1,19 +1,18 @@
---version:1.0.3;
 @font-face {
     font-family: 'Monaspace Neon';
     font-style: normal;
     font-display: swap;
-    src: url(https://cdn.jsdelivr.net/gh/Siya-33/static@{{--version}}/fonts/MonaspaceNeonVarVF[wght,wdth,slnt].woff2) format('woff2');
+    src: url(https://cdn.jsdelivr.net/gh/Siya-33/static@1.0.5/fonts/MonaspaceNeonVarVF[wght,wdth,slnt].woff2) format('woff2');
   }
 @font-face {
   font-family: 'Monaspace Radon';
   font-style: normal;
   font-display: swap;
-  src: url(https://cdn.jsdelivr.net/gh/Siya-33/static@{{--version}}/fonts/MonaspaceRadonVarVF[wght,wdth,slnt].woff2) format('woff2');
+  src: url(https://cdn.jsdelivr.net/gh/Siya-33/static@1.0.5/fonts/MonaspaceRadonVarVF[wght,wdth,slnt].woff2) format('woff2');
 }
 @font-face {
   font-family: 'Cervanttis';
   font-style: normal;
   font-display: swap;
-  src: url(https://cdn.jsdelivr.net/gh/Siya-33/static@{{--version}}/fonts/Cervanttis.woff2) format('woff2');
+  src: url(https://cdn.jsdelivr.net/gh/Siya-33/static@1.0.5/fonts/Cervanttis.woff2) format('woff2');
 }
