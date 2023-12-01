@@ -1,4 +1,6 @@
 // version 1.0.5
+// https://font.shirakii.com/fonts_chunk
+// https://cdn.jsdelivr.net/gh/Siya-33/static@1.0.5/fonts/fonts_chunk
 @font-face {
     font-family: 'Monaspace Neon';
     font-style: normal;
@@ -17,3 +19,8 @@
   font-display: swap;
   src: url(https://cdn.jsdelivr.net/gh/Siya-33/static@1.0.5/fonts/Cervanttis.woff2) format('woff2');
 }
+@import "FZXKTJW_regular.css";
+@import "STKaiti_regular.css";
+@import "MaShanZheng_regular.css";
+@import "LXGWWenKai_light_regular_bold.css";
+@import "仓耳今楷_light_medium_bold.css";
