@@ -1,6 +1,6 @@
-/*  version 1.0.7
+/*  version 1.0.8
 https://font.shirakii.com/fonts_chunk
-https://cdn.jsdelivr.net/gh/Siya-33/static@1.0.7/fonts/fonts_chunk */
+https://cdn.jsdelivr.net/gh/Siya-33/static@1.0.8/fonts/fonts_chunk */
 @import "FZXKTJW_regular.css";
 @import "STKaiti_regular.css";
 @import "MaShanZheng_regular.css";
@@ -11,17 +11,17 @@ https://cdn.jsdelivr.net/gh/Siya-33/static@1.0.7/fonts/fonts_chunk */
     font-family: 'Monaspace Neon';
     font-style: normal;
     font-display: swap;
-    src: url(https://cdn.jsdelivr.net/gh/Siya-33/static@1.0.7/fonts/MonaspaceNeonVarVF[wght,wdth,slnt].woff2) format('woff2');
+    src: url(https://cdn.jsdelivr.net/gh/Siya-33/static@1.0.8/fonts/MonaspaceNeonVarVF[wght,wdth,slnt].woff2) format('woff2');
   }
 @font-face {
   font-family: 'Monaspace Radon';
   font-style: normal;
   font-display: swap;
-  src: url(https://cdn.jsdelivr.net/gh/Siya-33/static@1.0.7/fonts/MonaspaceRadonVarVF[wght,wdth,slnt].woff2) format('woff2');
+  src: url(https://cdn.jsdelivr.net/gh/Siya-33/static@1.0.8/fonts/MonaspaceRadonVarVF[wght,wdth,slnt].woff2) format('woff2');
 }
 @font-face {
   font-family: 'Cervanttis';
   font-style: normal;
   font-display: swap;
-  src: url(https://cdn.jsdelivr.net/gh/Siya-33/static@1.0.7/fonts/Cervanttis.woff2) format('woff2');
+  src: url(https://cdn.jsdelivr.net/gh/Siya-33/static@1.0.8/fonts/Cervanttis.woff2) format('woff2');
 }
