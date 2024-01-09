@@ -1,22 +1,22 @@
-/*  version 1.0.9
+/*  version latest
 https://font.shirakii.com/fonts_chunk
-https://cdn.jsdelivr.net/gh/Siya-33/static@1.0.9/fonts/fonts_chunk */
+https://cdn.jsdelivr.net/gh/Siya-33/static@latest/fonts/fonts_chunk */
 
 @font-face {
     font-family: 'Monaspace Neon';
     font-style: normal;
     font-display: swap;
-    src: url(https://cdn.jsdelivr.net/gh/Siya-33/static@1.0.9/fonts/MonaspaceNeonVarVF[wght,wdth,slnt].woff2) format('woff2');
+    src: url(https://cdn.jsdelivr.net/gh/Siya-33/static@latest/fonts/MonaspaceNeonVarVF[wght,wdth,slnt].woff2) format('woff2');
   }
 @font-face {
   font-family: 'Monaspace Radon';
   font-style: normal;
   font-display: swap;
-  src: url(https://cdn.jsdelivr.net/gh/Siya-33/static@1.0.9/fonts/MonaspaceRadonVarVF[wght,wdth,slnt].woff2) format('woff2');
+  src: url(https://cdn.jsdelivr.net/gh/Siya-33/static@latest/fonts/MonaspaceRadonVarVF[wght,wdth,slnt].woff2) format('woff2');
 }
 @font-face {
   font-family: 'Cervanttis';
   font-style: normal;
   font-display: swap;
-  src: url(https://cdn.jsdelivr.net/gh/Siya-33/static@1.0.9/fonts/Cervanttis.woff2) format('woff2');
+  src: url(https://cdn.jsdelivr.net/gh/Siya-33/static@latest/fonts/Cervanttis.woff2) format('woff2');
 }
