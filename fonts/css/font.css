@@ -20,3 +20,9 @@ https://cdn.jsdelivr.net/gh/Siya-33/static@latest/fonts/fonts_chunk */
   font-display: swap;
   src: url(https://cdn.jsdelivr.net/gh/Siya-33/static@latest/fonts/Cervanttis.woff2) format('woff2');
 }
+@font-face {
+  font-family: 'Ma Shan Zheng Regular';
+  font-style: normal;
+  font-display: swap;
+  src: url(https://cdn.jsdelivr.net/gh/Siya-33/static@latest/fonts/MaShanZheng-Regular.subset.ttf) format('truetype');
+}
