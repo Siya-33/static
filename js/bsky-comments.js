@@ -137,7 +137,9 @@ class BskyComments extends HTMLElement {
             <span>${author.displayName ?? author.handle}&nbsp;</span>
             <span class="authorhandle">@${author.handle}</span>
           </a>
-          <p class="comment-text">${this.escapeHTML(text)}</p>
+          <a href="https://bsky.app/profile/${author.did}/post/${reply.post.cid}" target="_blank" rel="noopener noreferrer">
+            <p class="comment-text">${this.escapeHTML(text)}</p>
+          </a>
           <small class="comment-meta">
             ${reply.post.likeCount ?? 0} likes • ${reply.post.replyCount ?? 0} replies
           </small>
