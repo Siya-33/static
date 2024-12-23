@@ -1,5 +1,5 @@
 // Fork from "https://gist.github.com/LoueeD/b7dec10b2ea56c825cbb0b3a514720ed"
-// <script type="module" src="https://cdn.jsdelivr.net/gh/Siya-33/static@1.2.0/js/bsky-comment.js"></script>
+// <script type="module" src="https://cdn.jsdelivr.net/gh/Siya-33/static@1.2.1/js/bsky-comments.js"></script>
 // Dark Scheme
 class BskyComments extends HTMLElement {
     constructor() {
@@ -78,7 +78,6 @@ class BskyComments extends HTMLElement {
       const container = document.createElement("div");
       container.innerHTML = `
         <comments>
-          <h2>评论</h2>
           <p class="reply-info">
             可以在
             <a href="https://bsky.app/profile/${this.thread.post?.author?.did}/post/${this.thread.post?.uri.split("/").pop()}" target="_blank" rel="noopener noreferrer">
@@ -135,8 +134,8 @@ class BskyComments extends HTMLElement {
         <div class="author">
           <a href="https://bsky.app/profile/${author.did}" target="_blank" rel="noopener noreferrer">
             ${author.avatar ? `<img width="22px" src="${author.avatar}" />` : ''}
-            ${author.displayName ?? author.handle} 
-            <span class="authorhandle"> @${author.handle}</span>
+            <span>${author.displayName ?? author.handle} &nbsp;</span>
+            <span class="authorhandle">@${author.handle}</span>
           </a>
           <p class="comment-text">${this.escapeHTML(text)}</p>
           <small class="comment-meta">
