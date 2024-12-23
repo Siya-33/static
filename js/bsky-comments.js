@@ -1,5 +1,5 @@
-// Fork from "https://gist.github.com/LoueeD/b7dec10b2ea56c825cbb0b3a514720ed.js"
-// <script type="module" src="https://esm.sh/gh/loueed/bsky@v1.0.0/comments"></script>
+// Fork from "https://gist.github.com/LoueeD/b7dec10b2ea56c825cbb0b3a514720ed"
+// <script type="module" src="https://cdn.jsdelivr.net/gh/Siya-33/static@1.2.0/js/bsky-comment.js"></script>
 // Dark Scheme
 class BskyComments extends HTMLElement {
     constructor() {
@@ -78,11 +78,12 @@ class BskyComments extends HTMLElement {
       const container = document.createElement("div");
       container.innerHTML = `
         <comments>
+          <h2>评论</h2>
           <p class="reply-info">
-            在
+            可以在
             <a href="https://bsky.app/profile/${this.thread.post?.author?.did}/post/${this.thread.post?.uri.split("/").pop()}" target="_blank" rel="noopener noreferrer">
               Bluesky
-            </a> 回复我
+            </a> 回复该博客：）
           </p>
           <div id="comments"></div>
           <button id="show-more">
@@ -134,7 +135,8 @@ class BskyComments extends HTMLElement {
         <div class="author">
           <a href="https://bsky.app/profile/${author.did}" target="_blank" rel="noopener noreferrer">
             ${author.avatar ? `<img width="22px" src="${author.avatar}" />` : ''}
-            ${author.displayName ?? author.handle} @${author.handle}
+            ${author.displayName ?? author.handle} 
+            <span class="authorhandle"> @${author.handle}</span>
           </a>
           <p class="comment-text">${this.escapeHTML(text)}</p>
           <small class="comment-meta">
@@ -170,7 +172,7 @@ class BskyComments extends HTMLElement {
           --background-color: #BDC3C7;
           --text-color: rgba(255, 255, 255, 0.9);
           --link-color: #356cbd;
-          --comment-meta-color: gray;
+          --comment-meta-color: #5E9595;
           --error-color: red;
           --reply-border-color: rgba(255, 255, 255, 0.7);
           --button-background-color: rgba(0,0,0,0.05);
@@ -180,8 +182,8 @@ class BskyComments extends HTMLElement {
   
         comments {
           margin: 0 auto;
-          padding: 1.2em;
-          max-width: 720px;
+          padding: 2em;
+          max-width: none;
           display: block;
           background-color: var(--background-color);
           color: var(--text-color);
@@ -212,13 +214,18 @@ class BskyComments extends HTMLElement {
           a {
             font-size: 0.9em;
             margin-bottom: 0.4em;
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
             color: var(--link-color);
+            text-decoration: none;
   
             img {
               margin-right: 0.4em;
               border-radius: var(--author-avatar-border-radius);
               vertical-align: middle;
+            }
+            p.authorHandle {
+              color: var(--comment-meta-color);
             }
           }
         }
@@ -238,6 +245,13 @@ class BskyComments extends HTMLElement {
         }
         .error {
           color: var(--error-color);
+        }
+        a{
+          color: var(--link-color);
+          text-decoration: none;
+        }
+        .authorhandle{
+          color: var(--comment-meta-color);
         }
       `;
       this.shadowRoot.appendChild(style);
