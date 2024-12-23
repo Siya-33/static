@@ -82,7 +82,7 @@ class BskyComments extends HTMLElement {
             可以在
             <a href="https://bsky.app/profile/${this.thread.post?.author?.did}/post/${this.thread.post?.uri.split("/").pop()}" target="_blank" rel="noopener noreferrer">
               Bluesky
-            </a> 回复该博客：）
+            </a> 回复该博客.
           </p>
           <div id="comments"></div>
           <button id="show-more">
@@ -134,7 +134,7 @@ class BskyComments extends HTMLElement {
         <div class="author">
           <a href="https://bsky.app/profile/${author.did}" target="_blank" rel="noopener noreferrer">
             ${author.avatar ? `<img width="22px" src="${author.avatar}" />` : ''}
-            <span>${author.displayName ?? author.handle} &nbsp;</span>
+            <span>${author.displayName ?? author.handle}&nbsp;</span>
             <span class="authorhandle">@${author.handle}</span>
           </a>
           <p class="comment-text">${this.escapeHTML(text)}</p>
