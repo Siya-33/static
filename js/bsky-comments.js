@@ -1,5 +1,5 @@
 // Fork from "https://gist.github.com/LoueeD/b7dec10b2ea56c825cbb0b3a514720ed"
-// <script type="module" src="https://cdn.jsdelivr.net/gh/Siya-33/static@1.2.5/js/bsky-comments.js"></script>
+// <script type="module" src="https://cdn.jsdelivr.net/gh/Siya-33/static@1.2.6/js/bsky-comments.js"></script>
 // Dark Scheme
 class BskyComments extends HTMLElement {
     constructor() {
@@ -225,9 +225,6 @@ class BskyComments extends HTMLElement {
               border-radius: var(--author-avatar-border-radius);
               vertical-align: middle;
             }
-            p.authorHandle {
-              color: var(--comment-meta-color);
-            }
           }
         }
         .comment-text {
@@ -251,6 +248,9 @@ class BskyComments extends HTMLElement {
         a{
           color: var(--link-color);
           text-decoration: none;
+        }
+        .authorhandle{
+          color: var(--comment-meta-color);
         }
       `;
       this.shadowRoot.appendChild(style);
