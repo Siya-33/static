@@ -1,5 +1,5 @@
 // Fork from "https://gist.github.com/LoueeD/b7dec10b2ea56c825cbb0b3a514720ed"
-// <script type="module" src="https://cdn.jsdelivr.net/gh/Siya-33/static@1.2.1/js/bsky-comments.js"></script>
+// <script type="module" src="https://cdn.jsdelivr.net/gh/Siya-33/static@1.2.2/js/bsky-comments.js"></script>
 // Dark Scheme
 class BskyComments extends HTMLElement {
     constructor() {
