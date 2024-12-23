@@ -1,5 +1,5 @@
 // Fork from "https://gist.github.com/LoueeD/b7dec10b2ea56c825cbb0b3a514720ed"
-// <script type="module" src="https://cdn.jsdelivr.net/gh/Siya-33/static@1.2.4/js/bsky-comments.js"></script>
+// <script type="module" src="https://cdn.jsdelivr.net/gh/Siya-33/static@1.2.5/js/bsky-comments.js"></script>
 // Dark Scheme
 class BskyComments extends HTMLElement {
     constructor() {
@@ -132,7 +132,7 @@ class BskyComments extends HTMLElement {
   
       comment.innerHTML = `
         <div class="author">
-          <a href="https://bsky.app/profile/${author.did}" target="_blank" rel="noopener noreferrer">
+          <a style="inline-flex" href="https://bsky.app/profile/${author.did}" target="_blank" rel="noopener noreferrer">
             ${author.avatar ? `<img width="22px" src="${author.avatar}" />` : ''}
             <span>${author.displayName ?? author.handle}&nbsp;</span>
             <span class="authorhandle">@${author.handle}</span>
@@ -215,7 +215,7 @@ class BskyComments extends HTMLElement {
           a {
             font-size: 0.9em;
             margin-bottom: 0.4em;
-            display: inline-flex;
+            display: flex;
             align-items: center;
             color: var(--link-color);
             text-decoration: none;
@@ -231,6 +231,7 @@ class BskyComments extends HTMLElement {
           }
         }
         .comment-text {
+          color: var(--text-color);
           margin: 5px 0;
           white-space: pre-line;
         }
@@ -250,9 +251,6 @@ class BskyComments extends HTMLElement {
         a{
           color: var(--link-color);
           text-decoration: none;
-        }
-        .authorhandle{
-          color: var(--comment-meta-color);
         }
       `;
       this.shadowRoot.appendChild(style);
