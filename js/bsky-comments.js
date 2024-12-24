@@ -1,5 +1,5 @@
 // Fork from "https://gist.github.com/LoueeD/b7dec10b2ea56c825cbb0b3a514720ed"
-// <script type="module" src="https://cdn.jsdelivr.net/gh/Siya-33/static@1.2.6/js/bsky-comments.js"></script>
+// <script type="module" src="https://cdn.jsdelivr.net/gh/Siya-33/static@1.2.7/js/bsky-comments.js"></script>
 // Dark Scheme
 class BskyComments extends HTMLElement {
     constructor() {
@@ -170,14 +170,13 @@ class BskyComments extends HTMLElement {
       const style = document.createElement("style");
       style.textContent = `
         :host {
-          --background-color: #BDC3C7;
+          --background-color: rgba(66,66,66,0.7);
           --text-color: rgba(255, 255, 255, 0.9);
           --link-color: #356cbd;
           --comment-meta-color: #5E9595;
           --error-color: red;
-          --reply-border-color: rgba(255, 255, 255, 0.7);
-          --button-background-color: rgba(0,0,0,0.05);
-          --button-hover-background-color: rgba(0,0,0,0.1);
+          --reply-border-color: transparent;
+          --button-background-color: #222327;
           --author-avatar-border-radius: 100%;
         }
   
@@ -186,6 +185,7 @@ class BskyComments extends HTMLElement {
           padding: 2em;
           max-width: none;
           display: block;
+          border-radius: 0.4em;
           background-color: var(--background-color);
           color: var(--text-color);
         }
@@ -194,6 +194,7 @@ class BskyComments extends HTMLElement {
           color: var(--text-color);
         }
         #show-more {
+          color: var(--text-color) !important;
           margin-top: 10px;
           width: 100%;
           padding: 1em;
@@ -203,10 +204,6 @@ class BskyComments extends HTMLElement {
           border-radius: 0.8em;
           cursor: pointer;
           border: 0;
-  
-          &:hover {
-            background: var(--button-hover-background-color);
-          }
         }
         .comment {
           margin-bottom: 2em;
